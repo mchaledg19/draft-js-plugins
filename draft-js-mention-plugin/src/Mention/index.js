@@ -3,6 +3,7 @@ import unionClassNames from 'union-class-names';
 
 const MentionLink = ({ mention, children, className }) =>
   <a
+    id={'some-id-here-from-the-user-input'}
     href={mention.link}
     className={className}
     spellCheck={false}
@@ -12,6 +13,7 @@ const MentionLink = ({ mention, children, className }) =>
 
 const MentionText = ({ children, className }) =>
   <span
+    id={'some-id-here-from-the-user-input'}
     className={className}
     spellCheck={false}
   >
